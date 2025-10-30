@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sports 360 — News</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <img src="images/websitelogo.png" alt="Sports 360 Logo" class="site-logo" />
+      <a class="brand" href="index.html"><h3>Sports 360</h3></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Players</a>
+        <a href="community.html">Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Sports News</h1>
+    <button id="tts-btn" aria-label="Listen to page content" style="margin-bottom:1em;">🔊 Listen</button>
+
+    <label class="grow">
+      Search news
+      <input id="newsSearch" type="search" placeholder="Search headlines, team or sport..."/>
+    </label>
+
+    <!-- Sports Category Dropdown -->
+    <div style="margin-bottom:1em;">
+      <label>
+        Sports Category
+        <select id="categoryFilter">
+          <option value="">All</option>
+          <option value="Football">Football</option>
+          <option value="Basketball">Basketball</option>
+          <option value="Cricket">Cricket</option>
+          <option value="Community">Community</option>
+        </select>
+      </label>
+    </div>
+
+    <section class="list news-list" aria-live="polite">
+      <article class="news-item card">
+        <img src="images/FIFA.png"World Cup Qualifier celebration" class="news-img"/>
+        <h3>World Cup Qualifier: Late Winner Sends Fans Wild</h3>
+        <p class="muted">Football • Sep 14, 2025</p>
+        <p>In a dramatic finish, the underdogs scored in stoppage time to clinch qualification.</p>
+      </article>
+
+      <article class="news-item card">
+        <h3>All Star Guard Signs Multi Year Deal</h3>
+        <img src="images/basketball.png" alt="Basketball player signing contract" class="news-img" />
+        <p class="muted">Basketball • Sep 12, 2025</p>
+        <p>The guard's new contract makes him the highest-paid player on his squad.</p>
+      </article>
+
+      <article class="news-item card">
+        <h3>Injury Update: Fast Bowler to Miss Series</h3>
+        <img src="images/cricket.png" alt="Cricket player walking off field" class="news-img" />
+        <p class="muted">Cricket • Sep 10, 2025</p>
+        <p>Medical scans confirmed a stress injury; a replacement has been called up.</p>
+      </article>
+
+      <article class="news-item card">
+        <h3>Local Community Tournament Announced</h3>
+        <img src="images/localcommunity.png" alt="local community" class="news-img community-logo" />
+        <p class="muted">Community • Sep 08, 2025</p>
+        <p>Amateur teams from across the region will compete in a weekend festival of sport.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Sports 360</p>
+  </footer>
+</body>
+</html>

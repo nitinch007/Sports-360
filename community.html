@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sports 360 — Community</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <img src="images/websitelogo.png" alt="Sports 360 Logo" class="site-logo" />
+      <a class="brand" href="index.html"><h3>Sports 360</h3></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Players</a>
+        <a href="community.html" class="active">Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <h1>Join the Community / Register for Events</h1>
+    <button id="tts-btn" aria-label="Listen to page content" style="margin-bottom:1em;">🔊 Listen</button>
+
+    <form id="communityForm" class="form">
+      <div class="grid">
+        <label>Full Name
+          <input type="text" id="name" required placeholder="Your full name" />
+        </label>
+        <label>Email
+          <input type="email" id="email" required placeholder="you@example.com" />
+        </label>
+      </div>
+
+      <div class="grid">
+        <label>Favourite Sport
+          <select id="sport">
+            <option>Football</option>
+            <option>Basketball</option>
+            <option>Cricket</option>
+          </select>
+        </label>
+        <label>Region
+          <select id="region">
+            <option>Europe</option>
+            <option>Americas</option>
+            <option>Asia</option>
+          </select>
+        </label>
+      </div>
+
+      <label>Event
+        <select id="event">
+          <option>Local Community Meetup</option>
+          <option>Training Session</option>
+          <option>Friendly Tournament</option>
+        </select>
+      </label>
+
+      <button type="submit" class="btn">Register</button>
+      <p id="formOutput" class="muted"></p>
+    </form>
+
+    <!-- Community Gallery Section -->
+    <h2>Community Highlights Gallery</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="images/LocalFootballMeetup.png" alt="Community Meetup">
+        <p>Local Football Meetup</p>
+      </div>
+      <div class="card">
+        <img src="images/BasketballTrainingSession.png" alt="Training Session">
+        <p>Basketball Training Session</p>
+      </div>
+      <div class="card">
+        <img src="images/FriendlyCricketTournament.png" alt="Friendly Tournament">
+        <p>Friendly Cricket Tournament</p>
+      </div>
+      <div class="card">
+        <img src="images/sportsCommunityGroupPhoto.png" alt="Group Photo">
+        <p>Community Group Photo</p>
+      </div>
+      <div class="card">
+        <img src="images/EventCelebrationHighlights.png" alt="Event Celebration">
+        <p>Event Celebration Highlights</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Sports 360</p>
+  </footer>
+</body>
+</html>

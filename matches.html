@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sports 360 — Matches</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <img src="images/websitelogo.png" alt="Sports 360 Logo" class="site-logo" />
+      <a class="brand" href="index.html"><h3>Sports 360</h3></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="matches.html" class="active">Matches</a>
+        <a href="players.html">Players</a>
+        <a href="community.html">Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Upcoming Matches</h1>
+    <button id="tts-btn" aria-label="Listen to page content" style="margin-bottom:1em;">🔊 Listen</button>
+
+    <div class="filters">
+      <label>
+        Filter by sport:
+        <select id="matchSportFilter">
+          <option value="all">All</option>
+          <option value="football">Football</option>
+          <option value="basketball">Basketball</option>
+          <option value="cricket">Cricket</option>
+        </select>
+      </label>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Sport</th>
+            <th>Match</th>
+            <th>Date</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr data-sport="football">
+            <td>Football</td>
+            <td>Man City vs Real Madrid</td>
+            <td>2025-09-10</td>
+            <td>Manchester</td>
+          </tr>
+          <tr data-sport="basketball">
+            <td>Basketball</td>
+            <td>Lakers vs Celtics</td>
+            <td>2025-09-12</td>
+            <td>Los Angeles</td>
+          </tr>
+          <tr data-sport="cricket">
+            <td>Cricket</td>
+            <td>India vs Pakistan</td>
+            <td>2025-09-15</td>
+            <td>Dubai</td>
+          </tr>
+          <tr data-sport="football">
+            <td>Football</td>
+            <td>Barcelona vs Bayern Munich</td>
+            <td>2025-09-20</td>
+            <td>Barcelona</td>
+          </tr>
+          <tr data-sport="basketball">
+            <td>Basketball</td>
+            <td>Golden State Warriors vs Chicago Bulls</td>
+            <td>2025-09-28</td>
+            <td>San Francisco</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Match Highlights Gallery</h2>
+    <div class="gallery">
+      <div class="card">
+        <img src="images/ManCityvsRealMadrid.png" alt="Football Highlight">
+        <p>Man City vs Real Madrid — Manchester</p>
+      </div>
+      <div class="card">
+        <img src="images/IndiavsPakistan.png" alt="Cricket Highlight">
+        <p>India vs Pakistan — Dubai</p>
+      </div>
+      <div class="card">
+        <img src="images/LakersvsCeltics.png" alt="Basketball Highlight">
+        <p>Lakers vs Celtics — Los Angeles</p>
+      </div>
+      <div class="card">
+        <img src="images/BarcelonavsBayenMunichBarcelona.png" alt="Football Highlight">
+        <p>Barcelona vs Bayern Munich — Barcelona</p>
+      </div>
+      <div class="card">
+        <img src="images/WarriorsvsChicagoBulls.png" alt="Basketball Highlight">
+        <p>Golden State Warriors vs Chicago Bulls — San Francisco</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Sports 360</p>
+  </footer>
+</body>
+</html>

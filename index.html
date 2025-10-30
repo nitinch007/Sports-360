@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sports 360 — Home</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav">
+      <img src="images/websitelogo.png" alt="Sports 360 Logo" class="site-logo" />
+      <a class="brand" href="index.html"><h3>Sports 360</h3></a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="matches.html">Matches</a>
+        <a href="players.html">Players</a>
+        <a href="community.html">Community</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to Sports 360</h1>
+      <p>Stay updated with sports news and matches.</p>
+      
+      <div class="quick-actions">
+        <a class="btn" href="news.html">📰 Read News</a>
+        <a class="btn" href="matches.html">⚽ Match Info</a>
+        <a class="btn" href="community.html">👥 Join Community</a>
+      </div>
+      <button id="tts-btn" aria-label="Listen to page content" style="margin-top:1em;">🔊 Listen</button>
+    </section>
+
+
+
+    <!-- Slideshow Section Start -->
+    <section class="slideshow">
+      <div class="slides">
+        <img src="images/slideshow1.jpg" alt="Slide 1" class="slide active"/>
+        <img src="images/slideshow2.png" alt="Slide 2" class="slide"/>
+        <img src="images/slideshow3.png" alt="Slide 3" class="slide"/>
+        <img src="images/slideshow4.png" alt="Slide 4" class="slide"/>
+        <img src="images/slideshow5.png" alt="Slide 5" class="slide"/>
+      </div>
+      <div class="slideshow-controls">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+      </div>
+    </section>
+    
+    <!-- Slideshow Section End -->
+
+    <section class="cards" aria-label="Featured">
+      <article class="card">
+        <img src="images/footballhighlight.png" alt="Football Highlights" class="card-img"/>
+        <h3>Football Highlights</h3>
+        <p>Latest fixtures, results, and transfer buzz.</p>
+        <ul>
+          <li>Champions League: Real Madrid vs. Man City 2-1</li>
+          <li>Transfer: Mbappé joins Liverpool</li>
+          <li>Top Scorer: Haaland (12 goals)</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <img src="images/basketballhighlight.png" alt="Basketball Spotlight" class="card-img"/>
+        <h3>Basketball Spotlight</h3>
+        <p>Top plays and player rankings.</p>
+        <ul>
+          <li>NBA Finals: Lakers defeat Celtics 4-2</li>
+          <li>MVP: Giannis Antetokounmpo</li>
+          <li>Rookie Watch: Victor Wembanyama</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <img src="images/cricketcorner.png" alt="Cricket Corner" class="card-img"/>
+        <h3>Cricket Corner</h3>
+        <p>Series updates and standout performances.</p>
+        <ul>
+          <li>India wins T20 series vs. Australia</li>
+          <li>Player of the Series: Virat Kohli</li>
+          <li>Upcoming: Ashes 2025</li>
+        </ul>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Sports 360</p>
+  </footer>
+</body>
+</html>
